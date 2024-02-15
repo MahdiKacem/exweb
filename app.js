@@ -6,6 +6,12 @@ const size = document.querySelector("#textSize");
 
 const font = document.querySelector("#textFont");
 
+const textarea = document.querySelector("textarea");
+
+textarea.addEventListener("input", function(){
+    text.innerHTML=textarea.value;
+})
+
 color.addEventListener("input", function () {
     text.style.color = color.value;
     })

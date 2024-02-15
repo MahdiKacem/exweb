@@ -13,8 +13,18 @@ body{
 }
 #container p{
     text-align: center;
+    word-wrap: break-word;
+    max-width: 100%;
+    outline: none;
 
 }
+textarea{
+    display: flex;
+    position: relative;
+    left: 100px;
+    outline: none;
+}
+
 #contained{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: lightgray;
@@ -33,6 +43,10 @@ body{
     border-radius: 5px;
     border: 1px solid grey;
     padding: 2px;
+    outline: none;
+}
+#textColor:focus, #textSize:focus, #textFont :focus{
+    box-shadow: 0px 0px 3px rgb(38,88,215);
 }
 #textSize{
     height: 19px;
